@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+<Class name="Issuer.LNZL">
+<SqlTableName>LNZL</SqlTableName>
+<Super>%Persistent,%XML.Adaptor</Super>
+<TimeCreated>63143,45975.333139</TimeCreated>
+
+<Property name="Open">
+<Description>
+Цена открытия</Description>
+<Type>%Numeric</Type>
+<Required>1</Required>
+</Property>
+
+<Property name="High">
+<Description>
+Максимальная цена за период</Description>
+<Type>%Numeric</Type>
+<Required>1</Required>
+</Property>
+
+<Property name="Low">
+<Description>
+Минимальная цена за период</Description>
+<Type>%Numeric</Type>
+<Required>1</Required>
+</Property>
+
+<Property name="Closed">
+<Description>
+Цена закрытия</Description>
+<Type>%Numeric</Type>
+<Required>1</Required>
+</Property>
+
+<Property name="RHigh">
+<Description>
+доходность акции при движении ее цены вверх</Description>
+<Type>%Numeric</Type>
+</Property>
+
+<Property name="RLow">
+<Description>
+доходность акции при движении ее цены вниз</Description>
+<Type>%Numeric</Type>
+</Property>
+
+<Property name="srH">
+<Description>
+средняя H</Description>
+<Type>%Numeric</Type>
+</Property>
+
+<Property name="srL">
+<Description>
+средняя L</Description>
+<Type>%Numeric</Type>
+</Property>
+
+<Storage name="Default">
+<Type>%Library.CacheStorage</Type>
+<DataLocation>^Issuer.LNZLD</DataLocation>
+<DefaultData>LNZLDefaultData</DefaultData>
+<IdLocation>^Issuer.LNZLD</IdLocation>
+<IndexLocation>^Issuer.LNZLI</IndexLocation>
+<StreamLocation>^Issuer.LNZLS</StreamLocation>
+<ExtentSize>100000</ExtentSize>
+<Data name="LNZLDefaultData">
+<Value name="1">
+<Value>%%CLASSNAME</Value>
+</Value>
+<Value name="2">
+<Value>Open</Value>
+</Value>
+<Value name="3">
+<Value>Higt</Value>
+</Value>
+<Value name="4">
+<Value>Low</Value>
+</Value>
+<Value name="5">
+<Value>Closed</Value>
+</Value>
+<Value name="6">
+<Value>Date</Value>
+</Value>
+<Value name="7">
+<Value>Rhigh</Value>
+</Value>
+<Value name="8">
+<Value>RLow</Value>
+</Value>
+<Value name="9">
+<Value>RHigh</Value>
+</Value>
+<Value name="10">
+<Value>High</Value>
+</Value>
+<Value name="11">
+<Value>srH</Value>
+</Value>
+<Value name="12">
+<Value>srL</Value>
+</Value>
+</Data>
+</Storage>
+</Class>
+</Export>
